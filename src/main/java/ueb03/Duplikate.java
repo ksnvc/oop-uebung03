@@ -1,12 +1,15 @@
 package ueb03;
 
-class Duplikate {
+class Duplikate<T> {
 	/**
 	 * Gibt ein Set mit den Wörtern zurück, welche mindestens zwei mal im Text vorkommen.
 	 * Alle Satzzeichen im Text sollen ignoriert werden.
 	 * @param text Eingabetext, kann Satzzeichen enthalten welche ignoriert werden.
 	 * @return Set mit den Wörtern, welche mind. zwei mal vorkommen.
-	 */
+
+	**/
+
+
 	static Set findeDuplikate(String text) {
 		// nur Zeichen und Leerzeichen zulassen
 		StringBuilder sb = new StringBuilder();
@@ -29,5 +32,13 @@ class Duplikate {
 		}
 
 		return s2;
+	}
+
+	public String toString(T[] t){
+		String a = "";
+		for(T b : t)
+			a += b;
+		return a;
+
 	}
 }
