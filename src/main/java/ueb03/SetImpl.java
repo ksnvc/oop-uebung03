@@ -3,6 +3,7 @@ package ueb03;
 import java.util.NoSuchElementException;
 
 public class SetImpl<T extends Comparable<T>> implements Set<T>{
+
 	class Element {
 		T val;
 		Element left, right;
